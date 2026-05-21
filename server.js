@@ -28,6 +28,7 @@ app.use(
           return callback(null, true);
         }
         const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+        console.error(`CORS REJECTED! Request Origin: '${origin}'. Allowed Origins:`, allowedOrigins);
         return callback(new Error(msg), false);
       }
       return callback(null, true);
