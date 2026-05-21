@@ -48,7 +48,7 @@ const MOCK_PETS = [
     breed: 'Blue & Gold Macaw',
     age: '3 Years',
     gender: 'Male',
-    image: 'https://images.unsplash.com/photo-1552728089-57bdde30ebd3?auto=format&fit=crop&q=80&w=400',
+    image: 'https://imgs.search.brave.com/OB2WLHgwo3PyCvbmm_Ak2QYngisxU_vjBW32N-N8GRw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjAw/Mzk2Nzk2LTAwMS9w/aG90by9ibHVlLWFu/ZC1nb2xkLW1hY2F3/LW9uLXBlcmNoLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz0z/MGNQQWZzRW1YODJD/dTVVV3NFTE9yYzZX/T3BNZXAwNnFUOUtk/c0xUU0I4PQ',
     adoptionFee: 200,
     status: 'available',
     location: 'Miami, FL',
