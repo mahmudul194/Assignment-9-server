@@ -85,7 +85,13 @@ const MOCK_PETS = [
 
 const seedDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://rifatswe00_db_user:tNejYwqftytkDgUm@ac-cxcfaok-shard-00-00.c1hgswr.mongodb.net:27017,ac-cxcfaok-shard-00-01.c1hgswr.mongodb.net:27017,ac-cxcfaok-shard-00-02.c1hgswr.mongodb.net:27017/pet-adoption?ssl=true&replicaSet=atlas-cpg5c3-shard-0&authSource=admin&appName=Cluster0');
+    if (!process.env.MONGODB_URI) {
+      console.error('Error: MONGODB_URI environment variable is not defined in .env file');
+      console.error('Please set MONGODB_URI in your .env file before running seed');
+      process.exit(1);
+    }
+    
+    await mongoose.connect(process.env.MONGODB_URI);
     console.log('MongoDB connected for seeding');
 
     // Mongoose schema requires healthStatus and vaccinationStatus
