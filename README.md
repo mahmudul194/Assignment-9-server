@@ -37,8 +37,8 @@ The Express.js + MongoDB backend for the FurEver Home pet adoption platform. Han
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/mahmudul194/Assignment-9-server.git
-cd Assignment-9-server
+git clone https://github.com/mahmudul194/furever-home-server.git
+cd furever-home-server
 ```
 
 ### 2. Install dependencies
